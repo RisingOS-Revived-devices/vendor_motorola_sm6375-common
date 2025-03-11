@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/motorola/sm6375-common",
         "hardware/qcom-caf/common/libqti-perfd-client",
+        "hardware/motorola",
         "hardware/qcom-caf/sm8350",
         "hardware/qcom-caf/wlan",
         "hardware/motorola",
@@ -7912,6 +7913,7 @@ cc_prebuilt_library_shared {
                 "libsensorndkbridge",
                 "libqmimotext",
                 "liblog",
+                "libqsap_sdk",
                 "vendor.qti.hardware.bluetooth_sar@1.1",
                 "libhidlbase",
                 "libxml2",
@@ -7923,7 +7925,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
